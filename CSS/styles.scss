@@ -43,15 +43,15 @@ body{
     z-index:0;
 }
 
-.navbar-dark {
-    background-color: $background-dark;
+.navbar-inverse {
+     background-color: $background-dark;
 }
 
 .tab-content {
-   border-left: 1px solid $lt-gray;
-   border-right: 1px solid $lt-gray;
-   border-bottom: 1px solid $lt-gray;
-   padding: 10px;
+    border-left: 1px solid $lt-gray;
+    border-right: 1px solid $lt-gray;
+    border-bottom: 1px solid $lt-gray;
+    padding: 10px;
 }
 
 .carousel {
@@ -67,10 +67,29 @@ body{
         }
     }
 }
-
-#carouselButton {
+#carousel-button {
     right:0px;
     position: absolute;
     bottom: 0px;
-    z-index: 1;
+}
+
+.modal-content {
+	.modal-header {
+		background:$background-dark;
+		color:floralwhite;
+		border-bottom: none;
+
+		.close {
+			color:floralwhite;
+		}
+	}
+
+	.modal-body {
+		background:$background-pale;
+	}
+
+	.modal-footer {
+		background:$background-light;
+		border-top: none;
+	}
 }
